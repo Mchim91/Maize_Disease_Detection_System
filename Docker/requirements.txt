@@ -1,0 +1,17 @@
+opencv-contrib-python-headless
+numpy==1.25.2
+uvicorn==0.23.2
+fastapi==0.101.0
+Pillow==10.0.0
+pymongo==4.4.1
+pydantic==2.1.1
+dnspython==2.4.1
+idna==3.4
+anyio==3.7.1
+h11==0.14.0
+pip==23.2.1
+sniffio==1.3.0
+setuptools==65.5.0
+starlette==0.27.0
+click==8.1.6
+python-multipart==0.0.6

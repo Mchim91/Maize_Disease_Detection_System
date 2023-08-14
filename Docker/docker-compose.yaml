@@ -1,0 +1,20 @@
+version: "2.19.1"
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
+    environment:
+      MONGO_HOST: mongo
+      MONGO_DB: Maize_disease_Classification
+      MONGO_COLLECTION: predictions
+
+  mongo:
+    image: "mongo:latest"
+    ports:
+      - "27017:27017"
+    volumes:
+      - C:\Users\Admin\PycharmProjects\Docker application\Docker\mongodb_data:/data/db
